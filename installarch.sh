@@ -6,7 +6,7 @@ mkfs.vfat -F 32 /dev/sda1
 
 mkswap /dev/sda2
 
-mkfs.xfs /dev/sda3
+mkfs.xfs -f /dev/sda3
 
 mkdir /mnt/boot
 

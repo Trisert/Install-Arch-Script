@@ -29,4 +29,4 @@ grub-install --target=x86_64-efi --efi-directory=/boot
 
 grub-mkconfig -o /boot/grub/grub.cfg
 
-rm Install-Arch-Script
+rm installarch2.sh

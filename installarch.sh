@@ -28,7 +28,7 @@ hwclock --systohc
 
 ln -sf /usr/share/zoneinfo/Europe/Rome /etc/localtime
 
-pacman -Sy nano grub efibootmgr dhcpcd git 
+pacman -Sy nano grub efibootmgr dhcpcd git reflector
 
 systemctl enable dhcpcd
 

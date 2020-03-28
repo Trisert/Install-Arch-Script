@@ -20,6 +20,8 @@ reflector --sort rate --save /etp/pacman.d/mirrorlist
 
 pacstrap /mnt linux linux-firmware base base-devel
 
+genfstab -U /mnt >> /mnt/etc/fstab
+
 arch-chroot /mnt
 
 hwclock --systohc

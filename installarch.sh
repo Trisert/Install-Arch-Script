@@ -22,8 +22,6 @@ pacstrap /mnt linux linux-firmware base base-devel
 
 genfstab -U /mnt >> /mnt/etc/fstab
 
-cp installarch2.sh /mnt
-
 arch-chroot /mnt installarch2.sh
 
 hwclock --systohc

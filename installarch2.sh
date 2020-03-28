@@ -1,6 +1,5 @@
 #!/bin/bash 
 
-
 hwclock --systohc
 
 ln -sf /usr/share/zoneinfo/Europe/Rome /etc/localtime
@@ -9,15 +8,17 @@ pacman -Sy nano grub efibootmgr dhcpcd git reflector
 
 systemctl enable dhcpcd
 
-nano /etc/locale.gen
+echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen
+
+echo "it_IT.UTF-8 UTF-8" >> /etc/locale.gen
 
 locale-gen
 
-nano /etc/locale.conf
+echo "LANG=it_IT.UTF-8" >> /etc/locale.conf
 
-nano /etc/vconsole.conf
+echo "KEMAP=it" >> /etc/vconsole.conf
 
-nano /etc/hostname
+echo "arch" /etc/hostname
 
 passwd 
 

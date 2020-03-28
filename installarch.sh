@@ -22,7 +22,7 @@ pacstrap /mnt linux linux-firmware base base-devel
 
 genfstab -U /mnt >> /mnt/etc/fstab
 
-cp /Install-Arch-Script/installarch.sh /mnt
+cp /Install-Arch-Script/installarch22.sh /mnt
 
 arch-chroot /mnt
 

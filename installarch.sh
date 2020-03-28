@@ -38,11 +38,11 @@ nano /etc/locale.gen
 
 locale-gen
 
-nano /etc/locale.conf
+echo "LANG=it_IT.UTF-8" >> /etc/locale.conf
 
-nano /etc/vconsole.conf
+echo "KEMAP=it" >> /etc/vconsole.conf
 
-nano /etc/hostname
+echo "arch" /etc/hostname
 
 passwd 
 

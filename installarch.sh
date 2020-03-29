@@ -22,7 +22,9 @@ pacstrap /mnt linux linux-firmware base base-devel grub efibootmgr
 
 genfstab -U /mnt >> /mnt/etc/fstab
 
-arch-chroot /mnt installarch2.sh
+cp installarch2.sh /mnt
+
+arch-chroot /mnt 
 
 hwclock --systohc
 

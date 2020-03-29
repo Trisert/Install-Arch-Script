@@ -8,8 +8,6 @@ pacman -Sy nano grub efibootmgr dhcpcd git reflector
 
 systemctl enable dhcpcd
 
-rm /etc/locale.gen
-
 echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen
 
 echo "it_IT.UTF-8 UTF-8" >> /etc/locale.gen

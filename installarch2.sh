@@ -18,7 +18,7 @@ echo "LANG=it_IT.UTF-8" >> /etc/locale.conf
 
 echo "KEMAP=it" >> /etc/vconsole.conf
 
-echo "arch" /etc/hostname
+echo "arch" >> /etc/hostname
 
 passwd 
 

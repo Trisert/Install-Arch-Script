@@ -26,6 +26,8 @@ useradd -m -G wheel nicola
 
 passwd nicola
 
+mount /dev/sda1 /mnt
+
 grub-install --target=x86_64-efi --efi-directory=/boot --recheck
 
 grub-mkconfig -o /boot/grub/grub.cfg

@@ -26,12 +26,10 @@ useradd -m -G wheel nicola
 
 passwd nicola
 
-mkdir /boot
-
-mount /dev/sda1 /boot
-
-grub-install --target=x86_64-efi --efi-directory=/boot
+grub-install --target=x86_64-efi --efi-directory=/boot --recheck
 
 grub-mkconfig -o /boot/grub/grub.cfg
 
 rm installarch2.sh
+
+exit

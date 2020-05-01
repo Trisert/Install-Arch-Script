@@ -28,3 +28,5 @@ cd
  wget https://raw.githubusercontent.com/Trisert/dofiles/master/.zshrc
 
  wget https://raw.githubusercontent.com/Trisert/dofiles/master/.vimrc
+
+ wget https://raw.githubusercontent.com/Trisert/dofiles/master/.xinitrc
